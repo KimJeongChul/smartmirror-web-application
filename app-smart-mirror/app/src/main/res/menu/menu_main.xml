@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/Search"
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/action_Search"
+        android:orderInCategory="100"
+        tools:ignore="AppCompatResource" />
+    <item android:id="@+id/Alarm"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_Alarm"
+        android:icon="@android:drawable/ic_menu_info_details"
+        tools:ignore="AppCompatResource" />
+</menu>

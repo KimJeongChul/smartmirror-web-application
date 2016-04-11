@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/KimJungChul/AndroidStudioProjects/SmartMirror/actionbarsherlock/build/intermediates/bundles/debug/res/values-w600dp/values-w600dp.xml -->
+    <eat-comment/>
+    <integer name="abs__max_action_buttons">5</integer>
+</resources>

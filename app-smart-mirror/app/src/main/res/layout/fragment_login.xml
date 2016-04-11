@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_MAIN"
+    tools:context=".LoginFragment"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:background="@drawable/smartwheel_icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/color_WHITE"
+                    android:textSize="45sp"
+                    android:text="스마트 미러"
+                    android:background="@drawable/apptheme_textfield_default_holo_light"
+                    android:textColorHighlight="@color/color_WHITE"
+                    android:textColorHint="@color/color_WHITE"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/color_WHITE"
+                    android:textSize="18sp"
+                    android:text="김정출"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutcenter"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="80dp"
+            android:layout_below="@id/layoutcenter"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.facebook.login.widget.LoginButton
+                android:background="@color/color_button"
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

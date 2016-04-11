@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="유저 정보"
+                android:layout_marginTop="20dp"
+                android:textSize="40sp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_MAIN" />
+            <com.facebook.login.widget.ProfilePictureView
+                android:layout_marginTop="20dp"
+                android:id="@+id/home_profile_image_facebook"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:layout_centerVertical="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:weightSum="1"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="아이디 : "
+                    android:textSize="13sp"
+                    android:layout_weight="0.22" />
+                <TextView
+                    android:id="@+id/home_user_id"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/apptheme_textfield_activated_holo_light"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="이름 : "
+                    android:textSize="13sp"
+                    android:layout_weight="0.29" />
+                <TextView
+                    android:id="@+id/home_user_name"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/apptheme_textfield_activated_holo_light"
+                    />
+            </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:id="@+id/logout_button"
+            android:text="Log out"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/color_button"
+            android:textColor="@color/color_WHITE"
+            android:clickable="true"
+            />
+    </LinearLayout>
+</LinearLayout>

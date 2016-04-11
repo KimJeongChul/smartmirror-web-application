@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Mirror</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/holder.js"></script>
+
+<style type="text/css">
+	.carousel {
+		height: 700px;
+		margin-bottom: 60px;
+	}
+	/* Since positioning the image, we need to help out the caption */
+	.carousel-caption {
+		z-index: 10;
+	}
+
+	/* Declare heights because of positioning of img element */
+	.carousel .item {
+		height: 700px;
+		background-color: #777;
+	}
+
+	.carousel-inner>.item>img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		height: 700px;
+	}
+}
+</style>
+</head>
+<body>
+<div class="container-f">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">SMART MIRROR</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="project_introduce.html">Project 구성도</a></li>
+					<li><a href="made_smartmirror.html">Smart Mirror 제작</a></li>
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="#"><span
+							class="glyphicon glyphicon-user icon-white"></span> 스마트 커넥티드 융합 기술 과정 2기 김정출</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="image/navibar1.jpg" alt="First slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Smart Mirror</h1>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="image/navibar2.jpg" alt="Second slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Web Develop</h1>
+							<p>BootStrap, HTML5, CSS, JQuery, JavaScript</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="image/navibar3.jpg" alt="Third slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Android Develop</h1>
+							<p>Java, Android Studio</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
+				class="glyphicon glyphicon-chevron-left"></span></a> <a
+				class="right carousel-control" href="#myCarousel" data-slide="next"><span
+				class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+		<!-- /.carousel -->
+</div><!--  container-f -->
+
+<!--  스마트 미러 소개  -->
+<div class="container">
+	<div class="col-md-12">
+		<center>
+			<b><h1 id="section-subject">하드웨어 구성도</h1></b>
+			<div style="height:50px;"></div>
+			<b>
+				<p>하드웨어 구성은 다음과 같습니다.</p>
+				<p>라즈 베리 파이 2는 라즈베리 카메라 보드와 USB 마이크와 스피커를 이용합니다.</p>
+				<p>또한 스마트 폰과 Wi-Fi 통신을 통해 연동을 합니다.</p>
+			</b>
+			<div style="height:30px;"></div>
+			<img id="hardware_smartmirror" src="/image/smartmirror_hardware.PNG"/>
+			<!--
+			<img id="hardware_left" src="/image/hardware_raspberry.PNG"/>
+			<img id="hardware_middle" src="/image/smartmirror_mirror_icon.PNG"/>
+			<img id="hardware_right" src="/image/hardware_smartphone.PNG"/>  -->
+
+
+		</center>
+	</div>
+
+	<div class="col-md-12">
+		<center>
+			<div style="height:100px;"></div>
+			<b><h1 id="section-subject">소프트웨어 구성도</h1></b>
+			<div style="height:50px;"></div>
+			<b>
+				<p>스마트 미러 프로그램 개발은 NodeJS 언어를 이용하여 Electron APP으로 개발하였습니다. </p>
+				<p>웹 사이트는 HTML5, CSS, JQuery, JavaScript를 이용하여 개발하였습니다.</p>
+				<p>안드로이드 앱은 Android Studio 개발 환경으로 진행 하였습니다.</p>
+			</b>
+			<div style="height:30px;"></div>
+			<div class="col-md-12">
+				<img id="software_language" src="/image/software_language.PNG"/>
+				<div style="height:50px;"></div>
+			</div>
+
+			<b>
+				<p>사용된 API는 다음과 같습니다.</p>
+				<p>라즈 베리 파이 2는 라즈베리 카메라 보드와 USB 마이크와 스피커를 이용합니다.</p>
+				<p>또한 스마트 폰과 Wi-Fi 통신을 통해 연동을 합니다.</p>
+			</b>
+			<div style="height:30px;"></div>
+			<div class="col-md-12">
+					<img id="software_api" src="/image/software_api.PNG"/>
+			</div>
+
+
+
+
+		</center>
+	</div>
+</div><!--  스마트 미러 소개 끝  -->
+
+
+<footer class="footer-wrapper">
+	<div class="container-f footer-top">
+		<div class="row">
+			<div class="col-md-12" style="background-color:#d4d4d4;">
+				<center>
+					<h4><b>고객 지원</b></h4>
+					<h5>문의 사항은 아래의 연락처로 연락 바랍니다</h5>
+					<ul class="list-unstyled">
+						<li><i class="fa fa-phone-square"></i>...</li>
+						<li><i class="fa fa-envelope"></i>smartmirror.kjc@gmail.com<</li>
+					</ul>
+				</center>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid footer-bottom">
+		<div class="row">
+			<div class="col-md-12" style="background-color:black;">
+				<center><p style="color:white;">Copyright &copy; 2016- SmartMirror co. Kim Jeong Chul All rights reserved.</p></center>
+			</div>
+		</div>
+
+	</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/color_WHITE">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="미러 IP 설정"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/color_MAIN" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+        <TextView
+            android:gravity="center"
+            android:text="스마트 미러는 Wifi와 연동이 됩니다.\n터미널 창에서 ifconfig 명령어를 통해\n미러에게 부여받은 ip를 확인할 수 있습니다.
+확인하신 IP 주소를 밑에 입력하고 \n버튼을 눌러주세요.\n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="현재 저장된 스마트 미러 IP 주소 : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/tv_currentIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="스마트 미러 IP 주소 : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp" />
+            <EditText
+                android:id="@+id/et_ip"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:hint="IP를 입력해주세요"
+                android:textColorHint="@color/color_button"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_setIP"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="IP 변경"
+            android:textColor="@color/color_WHITE"
+            android:textSize="20sp"
+            android:background="@color/color_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n입력 예시 : 192.168.0.32\n(점까지 입력하셔야 합니다)"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</LinearLayout>

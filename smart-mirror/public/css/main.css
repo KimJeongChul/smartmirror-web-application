@@ -1,0 +1,47 @@
+#hardware_left {
+	width:250px;height:250px;
+}
+#hardware_middle {
+	width:250px;height:300px;
+}
+#hardware_right {
+	width:250px;height:250px;
+}
+#hardware_introduce{
+	margin-left:100px;
+}
+
+#hardware_smartmirror{
+	width:850px;height:600px;
+}
+
+#software_language{
+	width:850px;height:600px;
+}
+#software_api{
+	width:1000px;height:600px;
+}
+
+/* 스마트 미러 소개 */
+#smartmirror_kjc {
+	width:500px;
+	height: 600px;	
+}
+/* 개발자 소개 */
+#profile {
+	width:150px;height:150px;
+}
+#section-subject-red {
+	background-color:red;
+	color:white;
+}
+
+/* 미러 개발 */
+#smartmirror_made{
+	width:570px;height:200px;
+}
+
+
+#section-subject {
+	background-color:#d4d4d4;
+}

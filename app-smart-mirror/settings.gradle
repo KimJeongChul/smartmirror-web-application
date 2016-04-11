@@ -1,0 +1,2 @@
+include ':app', ':facebook', ':actionbarsherlock', ':slidingmenu_library'
+project(':slidingmenu_library').projectDir = new File('slidingmenulibrary')

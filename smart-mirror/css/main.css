@@ -1,0 +1,565 @@
+@font-face {
+    font-family: "HelveticaNeue-UltraLight";
+    src: url("../fonts/HelveticaNeue-UltraLight.ttf"); /* EOT file for IE */
+}
+
+@font-face {
+    font-family: "myfont-ttf";
+    src: url("../fonts/NanumBarunGothic.ttf");
+}
+body {
+    background-color: black;
+    color: #fff;
+    font-family: "HelveticaNeue-UltraLight",'myfont-ttf','HelveticaNeue-UltraLight', 'Open Sans', sans-serif;
+    font-weight: 100;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 100;
+}
+h1 {
+	font-family: 'myfont-ttf', sans-serif, Serif;
+	font-size: 60px
+}
+
+dt {
+    font-weight: 600;
+    font-weight: bold;
+    font-size : 18px;
+}
+dd {
+	font-size : 12px;
+}
+/* Colors */
+.light-grey {
+    color: #ccc;
+}
+
+.grey {
+    color: #999;
+}
+
+/* Displays */
+.sleep-cover {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.container {
+    z-index: -1; /* so things are still selectable */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.listening, .interim-result {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top-left {
+    float: left;
+}
+
+.date {
+    font-size: 42px;
+    /* add 3/28 Mon. */
+    font-weight: bold;
+}
+
+.time {
+    font-size: 100px;
+}
+
+.top-right {
+    float: right;
+}
+
+.middle-center {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.bottom-center {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bottom-right {
+    text-align : center;
+    float : right;
+}
+
+.bottom-left {
+    text-align : center;
+    float : left;
+    width : 350px;
+    margin-left : 5px;
+}
+
+.commands {
+    width: 450px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#whoissmartmirror {
+	width: 800px;
+	height: 600px;
+}
+
+#titleCalendar {
+  /* add 3/28 Mon. */
+  background: linear-gradient(#4682B4,#141414);
+  margin-top: 50px;
+  font-size : 25px;
+  border-top-left-radius : 10px;
+  border-top-right-radius : 10px;
+  width: 350px;
+  text-align: center;
+}
+
+#calendar-sidebar {
+	width : 30px;
+	height : 168px;
+	float : left;
+	background: linear-gradient(#141414,#4682B4);
+	border-top-left-radius : 10px;
+	border-bottom-left-radius : 10px;
+}
+
+element.style {
+	margin-top : 0px;
+	margin-bottom: 0px;
+}
+
+ul.calendar {
+    list-style: none;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top : 0px;
+	margin-bottom: 0px;
+    padding:0;
+}
+
+.calendar .event{
+    /* add 3/28 Mon. */
+     margin-bottom: 3px; 
+    border-radius: 5px;
+    background : linear-gradient(to right, #7D7D7D, #7F7F7F);
+    width: 350px;
+}
+
+.calendar span {
+    display: inline-block;
+}
+
+.calendar span.day {
+    font-weight: bold;
+    width: 100px;
+    vertical-align: top;
+     margin-left: 5px; 
+}
+
+.calendar span.summary{
+	margin-left: 6px;
+    max-width: 250px;
+}
+
+.calendar .event-details .details{
+    font-size: 12px;
+    padding-left: 90px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.weather {
+    margin-left: auto;
+    display: inline-block;
+    text-align: right;
+    width: 250px;
+    /* add 3/28 Mon. */
+    background-color: black;
+    border-radius: 5px;
+}
+
+#weather-sidebar {
+	width : 30px;
+	height : 330px;
+	float : left;
+	background: linear-gradient(#141414,#4682B4);
+	border-top-left-radius : 10px;
+	border-bottom-left-radius : 10px;
+}
+
+#titleWeather {
+  font-size : 25px;
+  /* add 3/28 Mon. */
+  text-align : center;
+  height:40px;
+  background: linear-gradient(#4682B4,#141414);
+  border-radius: 10px;
+}
+
+.weather-today .tempreture {
+    font-size: 48px;
+    /* add 3/28 Mon. */
+    color : white;
+    font-weight: bold;
+}
+
+.weather-week-descriptor {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin-left: auto;
+    margin-bottom: 5px;
+    text-align: right;
+
+}
+
+.weather-week {
+    font-size: 22px;
+    /* add 3/28 Mon. */
+    color: white;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-left: 10px;
+    background : linear-gradient(to right, #7D7D7D, #7F7F7F);
+}
+
+.weather-week .day {
+    display: inline-block;
+    margin-right: 10px;
+    width: 50px;
+
+    /* add 3/28 Mon. */
+    color: white;
+}
+
+.weather-week .tempreture {
+    display: inline-block;
+    width: 60px;
+}
+
+.traffic {
+  /* add 3/28 Mon.*/
+  margin-top : 50px;
+  background-color: black;
+  /*background: linear-gradient(to bottom right,#A22020, #EE0000);*/
+  border-radius: 10px;
+}
+#traffic-sidebar {
+	width : 30px;
+	height : 103px;
+	float : left;
+	background: linear-gradient(#141414,#4682B4);
+	border-top-left-radius : 10px;
+	border-bottom-left-radius : 10px;
+}
+
+#titleTraffic {
+    /* add 3/28 Mon.*/
+    text-align : center;
+    font-size : 25px;
+    background: linear-gradient(#4682B4,#141414);
+ 	border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.traffic-information {
+    text-align: right;
+}
+
+
+#traffic-content {
+  /* add 3/28 Mon.*/
+  border-radius: 10px;
+  background : linear-gradient(to right, #7D7D7D, #7F7F7F);
+  font-weight : bold;
+  
+}
+
+
+/** Youtube IFRAME */
+.yt_player_iframe{
+  width: 800px;
+  height: 600px;
+}
+
+/** Subway*/
+.subwayInfo {
+  font-size: 30px;
+}
+
+/** Noti */
+#titleNoti {
+  font-size : 25px;
+  /* add 3/28 Mon. */
+  background: linear-gradient(#4682B4,#141414);
+  border-top-left-radius : 10px;
+  border-top-right-radius : 10px;
+  width: 290px;
+  text-align: center;	
+}
+
+.noti {
+	text-align: left;
+}
+.noti-table {
+	background : linear-gradient(to right, #7D7D7D, #7F7F7F);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+/** News */
+.news{
+	width:600px; 
+	margin:auto;
+}
+#news-div{
+	background: linear-gradient(to bottom right,#dcdcdc, #FFFFFF);
+	border-radius: 5px;
+}
+#news-div span.titletext{
+	color : #000;
+	display: list-item;
+} 
+
+.contents{
+  max-width: 100%;
+}
+
+.gif {
+    height: 100%;
+}
+
+.map {
+    height: 1080px;
+}
+
+.contents-box {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contents-box:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 0 0 10px 10px #000;
+    -moz-box-shadow: inset 0 0 10px 10px #000;
+    box-shadow: inset 0 0 10px 10px #000;
+    overflow: hidden;
+}
+
+.color-block {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.debug-info {
+    width: 500px;
+}
+
+/* Animations */
+.fade.ng-hide {
+    opacity: 0;
+}
+
+.fade.ng-hide-remove,
+.fade.ng-hide-add {
+    display: block !important;
+}
+
+.fade.ng-hide-remove {
+    transition: all ease 500ms;
+}
+
+.fade.ng-hide-add {
+    transition: all ease 500ms;
+}
+
+.animate-grow {
+    max-height: 1280px !important;
+}
+
+.animate-grow.ng-hide-add {
+    transition: all linear 500ms;
+}
+
+.animate-grow.ng-hide-remove {
+    transition: all linear 500ms;
+}
+
+.animate-grow.ng-hide {
+    max-height: 0  !important;
+}
+
+
+.dimmed {
+    color: #aaa;
+}
+
+.xxsmall,
+.xsmall,
+.small {
+	font-family: "HelveticaNeue-Medium", sans-serif;
+	letter-spacing: 0;
+}
+
+.xxsmall {
+  font-size: 15px;
+}
+
+.xxsmall .wi {
+  line-height: 15px;
+}
+
+.xsmall {
+  font-size: 20px;
+}
+
+.small {
+    font-size: 25px;
+}
+
+
+.icon {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  font-size: 40px;
+  padding-right: 5px;
+  font-weight: 100;
+  margin-right: 10px;
+}
+
+.icon-small {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 0px;
+  padding-right: -10px;
+  font-weight: 100;
+  width: 20px;
+  color : white;
+}
+
+.xkcd {
+  -webkit-filter:invert(100%);
+  max-width: 100%;
+}
+
+.hole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+
+i {
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  left: -70px;
+  top: -70px;
+  border-radius: 140px;
+  opacity: 0;
+  animation-name: scale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+i:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+i:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+i:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+i:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+i:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+i:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+i:nth-child(7) {
+  animation-delay: 2.1s;
+}
+
+i:nth-child(8) {
+  animation-delay: 2.4s;
+}
+
+i:nth-child(9) {
+  animation-delay: 2.7s;
+}
+
+i:nth-child(10) {
+  animation-delay: 3s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: scale(1) translate(0px, -5px);
+    opacity: 1;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: scale(0.1) translate(0px, 5px);
+    opacity: 0;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0);
+  }
+}

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SmartMirror</string>
+    <string name="action_Search">Search</string>
+    <string name="action_Alarm">Alarm</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item ></item>
+        <item >미러 IP 설정</item>
+        <item >미러 음성 명령 전송</item>
+        <item >스마트 미러</item>
+        <!--<item >메뉴 4</item>-->
+
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item></item>
+        <item>@drawable/ic_setting</item>
+        <item>@drawable/ic_map1</item>
+        <item>@drawable/ic_map2</item>
+        <item>@drawable/ic_setting</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- facebook Description -->
+    <string name="facebook_app_id">......</string>
+
+</resources>

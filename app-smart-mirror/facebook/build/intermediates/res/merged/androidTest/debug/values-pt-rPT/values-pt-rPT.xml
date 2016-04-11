@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/KimJungChul/AndroidStudioProjects/SmartMirror/facebook/build/intermediates/bundles/debug/res/values-pt-rPT/values-pt-rPT.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">Enviar</string>
+</resources>

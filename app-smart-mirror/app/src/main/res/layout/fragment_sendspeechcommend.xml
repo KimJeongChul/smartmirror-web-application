@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="미러 음성 명령 전송"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/color_MAIN" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="명령어 결과 : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_WHITE"
+                android:textSize="10dp" />
+            <TextView
+                android:id="@+id/tv_speech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_WHITE"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_marginTop="30dp"
+            android:id="@+id/userSpeech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ico_mic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="미러에게 명령 전달"
+            android:textColor="@color/color_WHITE"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="음성인식을 통해 명령을 전달합니다."
+            android:textColor="@color/color_WHITE"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="멈추고 싶다면 '정지'를 말씀하세요!"
+            android:textColor="@color/color_red"
+            android:textSize="13dp"
+            android:textStyle="normal" />
+        <Button
+            android:layout_marginTop="40px"
+            android:id="@+id/btn_stopRecog"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="음성 명령 정지"
+            android:textColor="@color/color_WHITE"
+            android:textSize="20sp"
+            android:background="@drawable/bg_gradient"/>
+    </LinearLayout>
+</LinearLayout>

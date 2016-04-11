@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_black">#ff000000</color>
+    <color name="color_red">#FF2222</color>
+    <color name="color_gray">#ff7b7e80</color>
+    <color name="color_BLUE">#ff1022a4</color>
+    <color name="color_WHITE">#fffdffff</color>
+    <color name="color_MAIN">#EE0000</color>
+    <color name="color_button">#BA8888</color>
+    <color name="bg_gradient_start">#31244e</color>
+    <color name="bg_gradient_end">#6b394c</color>
+</resources>
